@@ -16,8 +16,8 @@ export class StudentComponent {
   id:string="";
 
 
-  constructor(private _studentService:StudentService){
-    _studentService.getstudents().subscribe(
+  constructor(private _studentsService:StudentService){
+    _studentsService.getstudents().subscribe(
       (data:any)=>{
         this.students = data;
       },
@@ -28,7 +28,7 @@ export class StudentComponent {
 }
 
 filter(){
-  this._studentService.getfilterstudents(this.term).subscribe(
+  this._studentsService.getfilterstudents(this.term).subscribe(
     (data:any)=>{
       this.students = data;
     },
@@ -39,7 +39,7 @@ filter(){
 }
 
 sort(){
-  this._studentService.getsortedstudents(this.column,this.order).subscribe(
+  this._studentsService.getsortedstudents(this.column,this.order).subscribe(
     (data:any)=>{
       this.students = data;
     },
@@ -49,7 +49,7 @@ sort(){
   )
 }
 delete(id:string){
-  this._studentService.deleteStudent(id).subscribe(
+  this._studentsService.deleteStudent(id).subscribe(
     (data:any)=>{
       alert("deleted succesfully!!");
       location.reload();
