@@ -3,6 +3,9 @@
    flex-wrap: wrap;
    gap: 10px;
 }
+h2{
+    color: blue;
+}
 /* .child1{
     width: 100%;
     height: 15%;
