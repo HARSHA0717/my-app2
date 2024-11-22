@@ -27,6 +27,8 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentComponent } from './student/student.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
+
 
 
 const routes: Routes = [
@@ -57,6 +59,7 @@ const routes: Routes = [
     {path:'create-vehicle',component:CreateVehicleComponent},
     {path:'create-account',component:CreateAccountComponent},
     {path:'student',component:StudentComponent},
+    {path:'create-student',component:CreateStudentComponent},
     {path:'**',component:PageNotFoundComponent}
 
     
