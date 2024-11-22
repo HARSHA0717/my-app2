@@ -1,5 +1,20 @@
 <div class="parent" >
+    <div class="child1">
     <input class="search" type="text" placeholder="search" [(ngModel)]="term" (keyup)="filter()" width="100px" height="20px">
+
+    <select class="sel bg-secondary" [(ngModel)]="column" >
+        <option class="opt bg-secondary">name</option>
+        <option>city</option>
+        <option>email</option>
+    </select>
+    <select class="sel bg-secondary" [(ngModel)]="order">
+        <option >asc</option>
+        <option>desc</option>
+    </select>
+    <button (click)="sort()" class="btn btn-info" >Sort</button>
+
+
+</div>
     
 
    
@@ -19,8 +34,6 @@
                 <br>
                 <label for="">City :{{student.city}}</label>
                 <br>
-                <label for="">Phone : {{student.phone}}</label>
-                <br>
                 <label for="">Email :{{student.email}}</label>
             </div>
             <div class="right">
@@ -36,7 +49,7 @@
             <div class="b2">
                 <button class="btn btn-dark">view</button>
                 <button class="btn btn-secondary">Edit</button>
-                <button class="btn btn-danger">delete</button>
+                <button class="btn btn-danger" (click)="delete(id)">delete</button>
             </div>
         </div>
     </div>
