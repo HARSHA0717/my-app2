@@ -1,0 +1,29 @@
+<div class="maincontainer">
+    <div class="childcontainer">
+        <h2>WEATHER</h2>
+        <div class="circle" *ngFor="let weather of weathers" [ngClass]="{
+            'blue':weather.current_weather.temperature > 0 ,
+            'yellow' : 
+            weather.current_weather.temperature < 0 &&
+            weather.current_weather.temperature > 30,
+            'green': 
+            weather.current_weather_temperature > 30 &&
+            weather.current_weather.temperature <=35,
+            'red': 
+            weather.current_weather_temperature > 35
+
+         
+        }">
+            <h1 class="temperature">{{weather.current_weather.temperature}} {{weather.current_weather_units.temperature}}</h1>
+            <h5>Wind Speed : {{weather.current_weather.windspeed}} {{weather.current_weather_units.windspeed}}</h5>
+            <h5>Wind Direction : {{weather.current_weather.winddirection}} {{weather.current_weather_units.winddirection}} </h5>
+
+            <p>{{weather.current_weather.time | date: 'medium':'UTC+5:30'}}</p>
+
+        </div>
+
+    
+
+
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="parent" >
+
+   
+
+
+    <div class="child2" *ngFor="let student of students" >
+        <div class="m1">
+        <div class="top">
+            <img src="https://loremflickr.com/640/480/abstract" width="50px" height="40px">
+            <h5>{{student.school_name}}</h5>
+        </div>
+        <div class="middle">
+            <div class="left">
+                <label for="">Name :{{student.name}}</label>
+                <label for="">Phone : {{student.phone}}</label>
+                <label for="">City :{{student.city}}</label>
+                <label for="">Phone : {{student.phone}}</label>
+                <label for="">Email :{{student.email}}</label>
+            </div>
+            <div class="right">
+                <img src="https://loremflickr.com/640/480/people" width="50px" height="50px">
+            </div>
+
+        </div>
+        <div class="bottom">
+            <div class="b1">
+                <label for="">school_city :{{student.school_city}}</label>
+                <label for="">school_pin :{{student.school_pin}}</label>
+            </div>
+            <div class="b2">
+                <button class="btn btn-dark">view</button>
+                <button class="btn btn-secondary">Edit</button>
+                <button class="btn btn-danger">delete</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</div>

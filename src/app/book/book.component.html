@@ -1,0 +1,10 @@
+<div class="parent">
+    <div class="child" *ngFor="let book of books">
+      <div>  
+        <img src="{{book.download_url}}" alt="">
+        <a class="btn btn-primary" href="{{book.download_url}}">Download</a>
+        <h4 class="author">{{book.author}}</h4>
+        
+    </div>
+    </div>
+</div>

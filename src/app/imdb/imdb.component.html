@@ -1,0 +1,18 @@
+
+<div class="main card">
+    <div class="card-body bg-secondary shadow-lg p-3 mb-3  rounded" *ngFor="let imdb of imdbs">
+        <h5 class="card-title text-warning">{{imdb.movie | uppercase}}</h5>
+        <div>
+        <p class="card-text text-light">Rating: {{imdb.rating}}</p>
+        <span *ngFor="let item of [].constructor(Math.floor(imdb.rating)); let i = index">
+  <img
+    src="https://img.freepik.com/free-vector/basic-star-flat-vector_78370-1483.jpg?t=st=1731987078~exp=1731990678~hmac=00eea7759f74d860c95f71b18a680f5de0693bd0b18476ebdeb1cf0ccc1ea2a1&w=740"
+    width="25px" height="20px"
+  />
+</span>
+</div>
+<br>
+        <a href="https://www.imdb.com/title/tt0068646/" target="_blank" class="btn btn-dark btn btn-outline-warning text-warning">View on IMDB</a>
+        
+    </div>
+</div>

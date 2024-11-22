@@ -1,0 +1,9 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+label{
+    width: 130px;
+    margin: 10px;
+}

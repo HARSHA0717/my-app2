@@ -1,0 +1,34 @@
+<div class="main bg-light carousel slide ">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#poke" data-bs-slide-to="0" class="active" ></button>
+        <button type="button" data-bs-target="#poke" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#poke" data-bs-slide-to="2"></button>
+      </div>
+    <div id="poke" class="child card carousel-inner  " *ngFor="let pokemon of pokemons">
+        
+        
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+
+         <img  src="{{pokemon.image_url}}" alt="" class="d-block w-100" width="100px" height="100px">
+        </div>
+        <h4>{{pokemon.pokemon}}</h4>
+        <h4>Type : {{pokemon.type}}</h4>
+        <h4>Abilities : {{pokemon.abilities}}</h4>
+        <h4>Hitpoints : {{pokemon.hitpoints}}</h4>
+        <h4>Evolutions : {{pokemon.evolutions}}</h4>
+        <h4>Location : {{pokemon.location}}</h4>
+      
+    </div>
+ 
+
+        
+
+    </div>
+    <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next bg-dark" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+</div>

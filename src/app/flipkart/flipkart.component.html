@@ -1,0 +1,85 @@
+<div class="parent">
+    <div class="top">
+        <div class="t1">
+            <h2>FLIPKART</h2>
+        </div>
+        <div class="t2">
+            
+        <div class="left">
+          <div>
+            <input class="form-control me-2 my-2" type="text" [(ngModel)]="searchText" placeholder="Search for products..." (keyup)="search()">
+
+            <button (click)="freeDel()" class="btn btn-secondary me-2 my-2">Only Free Delivery</button>
+          </div>
+          <div>
+            <button (click)="costh1()" class="btn btn-info me-2 my-2">Price high to low</button>
+            <button (click)="cost1h()" class="btn btn-info me-2 my-2">Price low to high</button>
+            <button (click)="rat1()" class="btn btn-info me-2 my-2">Rating high to low</button>
+            <button (click)="rat2()" class="btn btn-info me-2 my-2">Rating low to high</button>
+          </div>
+          <div>
+            <button (click)="discount()" class="btn btn-warning me-2 my-2">Apply 50% Discount</button>
+            <button (click)="charge()" class="btn btn-warning me-2 my-2">Delivery charges</button>
+
+        </div>
+        <div>
+            <button (click)="total()" class="btn btn-dark me-2">Total Price</button>
+            <button (click)="cart()" class="btn btn-dark me-2">Total Cart Value</button>
+        </div>
+        </div>
+        <div class="right">
+            <label for="">Name:</label>
+            <input type="text" [(ngModel)]="name" class="form-control">
+            <br>
+            <label for="">Price:</label>
+            <input type="number" [(ngModel)]="Price" class="form-control" >
+            <br>
+            <label for="">Rating:</label>
+            <input type="number" [(ngModel)]="Rating" class="form-control">
+            <br>
+            <label for="">Free Delivery</label>
+            <input type="radio" [(ngModel)]="Freedelivery" value="true">yes
+            <input type="radio" [(ngModel)]="Freedelivery" value="false">no
+           
+            <br>
+            <button class="btn btn-success" (click)="add()">Add to Cart</button>
+
+
+
+        </div>
+        </div>
+       
+
+    </div>
+    <div class="bottom">
+        <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Sno</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Rating</th>
+                <th>Free Delivery</th>
+                <th>Action</th>
+              </tr>  
+
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products;let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{product.name | uppercase}}</td>
+                    <td>{{product.Price}}</td>
+                    <td>{{product.Rating}}</td>
+                    <td>{{product.Freedelivery}}</td>
+                    <td>
+                        <button (click)="delete(i)" class="btn btn-danger">delete</button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    
+    </div>
+</div>

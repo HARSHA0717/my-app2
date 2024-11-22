@@ -1,0 +1,44 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 101, 82);
+}
+.child{
+    width: 30%;
+    height: 40%;
+    background-color: bisque;
+
+}
+h3{
+    text-align: center;
+}
+label{
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+    margin-left: 150px;
+}
+input{
+    width: 250px;
+    height: 20px;
+    border: 0px;
+    position: relative;
+    margin-left: 80px;
+}
+button{
+    width: 70px;
+    height: 25px;
+    background-color: rgb(41, 63, 56);
+    color: wheat;
+    border: 0;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 100px;
+}
+p{
+    font-size: 20px;
+  text-align: center;
+}
