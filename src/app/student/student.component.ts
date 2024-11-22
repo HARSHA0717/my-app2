@@ -9,6 +9,7 @@ import { StudentService } from '../student.service';
 export class StudentComponent {
 
   students:any=[];
+  term:string="";
 
 
   constructor(private _studentService:StudentService){
@@ -20,9 +21,22 @@ export class StudentComponent {
         console.log(error);
       }
     )
-
-
-  
-  
 }
+
+filter(){
+  this._studentService.getfilterstudents(this.term).subscribe(
+    (data:any)=>{
+      this.students = data;
+    },
+    (err:any)=>{
+      alert('internal server error');
+    }
+  )
+}
+
+
+
+
+
+
 }
