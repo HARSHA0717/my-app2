@@ -1,0 +1,15 @@
+<div class="parent">
+    <div class="header">
+        <h2>Social Profiles</h2>
+    </div>
+    <div class="child px-4 pt-2">
+        <div class="cards card my-2 p-3" *ngFor="let profile of profiles">
+            <div class="circle">
+                <label for="" *ngIf="profile.privacySettings.showEmail==true">{{profile.email}}</label>
+            </div>
+            
+
+
+        </div>
+    </div>
+</div>

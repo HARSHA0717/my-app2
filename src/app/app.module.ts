@@ -34,6 +34,20 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentComponent } from './student/student.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MaterialComponent } from './material/material.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {MatButtonModule} from '@angular/material/button';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { CreateUserComponent } from './create-user/create-user.component';
+
 
 @NgModule({
   declarations: [
@@ -66,7 +80,10 @@ import { CreateStudentComponent } from './create-student/create-student.componen
     CreateVehicleComponent,
     CreateAccountComponent,
     StudentComponent,
-    CreateStudentComponent
+    CreateStudentComponent,
+    ProfileComponent,
+    MaterialComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
@@ -74,6 +91,16 @@ import { CreateStudentComponent } from './create-student/create-student.componen
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatBadgeModule,
+    MatBottomSheetModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
