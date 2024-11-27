@@ -47,6 +47,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 
 @NgModule({
@@ -83,7 +84,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     CreateStudentComponent,
     ProfileComponent,
     MaterialComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    StudentDetailsComponent
   ],
   imports: [
     BrowserModule,
