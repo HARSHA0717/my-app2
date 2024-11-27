@@ -31,13 +31,14 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { ProfileComponent } from './profile/profile.component';
 import { MaterialComponent } from './material/material.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'dashboard',canActivate:[AuthenticationGuard] ,component:DashboardComponent,children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:'data-binding',component:DataBindingComponent},
@@ -66,11 +67,13 @@ const routes: Routes = [
     {path:'profile',component:ProfileComponent},
     {path:'material',component:MaterialComponent},
     {path:'create-user',component:CreateUserComponent},
-    {path:'**',component:PageNotFoundComponent}
+   
 
 
     
-  ]}
+  ]},
+  {path:"",component:HomeComponent},
+  {path:'**',component:PageNotFoundComponent},
 ];
 
 @NgModule({
