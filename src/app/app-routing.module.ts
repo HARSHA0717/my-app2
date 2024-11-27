@@ -31,6 +31,7 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { ProfileComponent } from './profile/profile.component';
 import { MaterialComponent } from './material/material.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 
 
@@ -66,6 +67,7 @@ const routes: Routes = [
     {path:'profile',component:ProfileComponent},
     {path:'material',component:MaterialComponent},
     {path:'create-user',component:CreateUserComponent},
+    {path:'student-details',component:StudentDetailsComponent},
     {path:'**',component:PageNotFoundComponent}
 
 
