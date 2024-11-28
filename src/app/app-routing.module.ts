@@ -69,7 +69,7 @@ const routes: Routes = [
     {path:'material',component:MaterialComponent},
     {path:'create-user',component:CreateUserComponent},
     {path:'student-details',component:StudentDetailsComponent},
-    {path:'**',component:PageNotFoundComponent}
+   
 
 
     
