@@ -12,13 +12,13 @@ export class StudentDetailsComponent {
     name: new FormControl('',[Validators.required,Validators.minLength(3),Validators.maxLength(12)]),
     class: new FormControl(),
     fathername: new FormControl('',[Validators.required,Validators.minLength(3),Validators.maxLength(12)]),
-    email: new FormControl(),
+    email: new FormControl('',[Validators.required,Validators.email]),
     dob: new FormControl(),
     address: new FormGroup({
       addressline: new FormControl(),
-      city: new FormControl(),
-      state: new FormControl(),
-      pincode: new FormControl('',[Validators.required,Validators.max(6)])
+      city: new FormControl('',[Validators.required]),
+      state: new FormControl('',[Validators.required]),
+      pincode: new FormControl('',[Validators.required,Validators.min(111111),Validators.max(666666)])
     }),
 
 
