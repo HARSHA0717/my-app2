@@ -48,6 +48,8 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
 
 
 @NgModule({
@@ -85,7 +87,9 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     ProfileComponent,
     MaterialComponent,
     CreateUserComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    VehicleDetailsComponent,
+    EditVehicleComponent
   ],
   imports: [
     BrowserModule,
