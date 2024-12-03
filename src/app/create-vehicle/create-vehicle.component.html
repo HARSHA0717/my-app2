@@ -2,7 +2,13 @@
 
 <div class="parent">
 <form [formGroup]="vehicleForm">
-    <h2>Create Vehicle Form</h2>
+    <h2>{{id? 'Edit Vehicle':'Create Vehicle'}}</h2>
+
+    <!-- we can use both methods -->
+     
+    <!-- <h2 *ngIf="id">Edit Vehicle</h2>
+    <h2 *ngIf="!id">Create Vehicle</h2> --> 
+
     <label for="">Vehicle : </label>
     <input type="text" formControlName="Vehicle">
     <br>

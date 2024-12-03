@@ -61,7 +61,11 @@
             <td>{{vehicle.cost}}</td>
             <td>{{vehicle.id}}</td>
             <td>
-                <button (click)="delete(vehicle.id)" class="btn btn-danger" >delete</button>
+               
+
+                <button (click)="delete(vehicle.id)" class="btn btn-danger" >delete</button> 
+                <button routerLink="/dashboard/vehicle-details/{{vehicle.id}}"  class="btn btn-warning" >View</button>   
+                <button routerLink="/dashboard/edit-vehicle/{{vehicle.id}}" class="btn btn-info" >Edit</button>    
             </td>
         </tr>
 

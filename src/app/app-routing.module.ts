@@ -33,6 +33,8 @@ import { MaterialComponent } from './material/material.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
 
 
 
@@ -69,6 +71,8 @@ const routes: Routes = [
     {path:'material',component:MaterialComponent},
     {path:'create-user',component:CreateUserComponent},
     {path:'student-details',component:StudentDetailsComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent}
    
 
 
