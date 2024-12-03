@@ -36,6 +36,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
 import { AccountDetailsComponent } from './account-details/account-details.component';
+import { CardDetailsComponent } from './card-details/card-details.component';
 
 
 
@@ -76,7 +77,9 @@ const routes: Routes = [
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'edit-vehicle/:id',component:CreateVehicleComponent},
     {path:'account-details/:id',component:AccountDetailsComponent},
-    {path:'edit-account/:id',component:CreateAccountComponent}
+    {path:'edit-account/:id',component:CreateAccountComponent},
+    {path:'card-details/:id',component:CardDetailsComponent},
+    {path:'edit-card/:id',component:CreateStudentComponent}
    
 
 

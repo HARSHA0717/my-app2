@@ -52,6 +52,8 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
 import { AccountDetailsComponent } from './account-details/account-details.component';
 import { EditAccountComponent } from './edit-account/edit-account.component';
+import { CardDetailsComponent } from './card-details/card-details.component';
+import { EditCardComponent } from './edit-card/edit-card.component';
 
 
 @NgModule({
@@ -93,7 +95,9 @@ import { EditAccountComponent } from './edit-account/edit-account.component';
     VehicleDetailsComponent,
     EditVehicleComponent,
     AccountDetailsComponent,
-    EditAccountComponent
+    EditAccountComponent,
+    CardDetailsComponent,
+    EditCardComponent
   ],
   imports: [
     BrowserModule,

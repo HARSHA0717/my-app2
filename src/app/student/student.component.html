@@ -47,9 +47,9 @@
                 <label for="">school_pin :{{student.school_pin}}</label>
             </div>
             <div class="b2">
-                <button class="btn btn-dark">view</button>
-                <button class="btn btn-secondary">Edit</button>
-                <button class="btn btn-danger" (click)="delete(id)">delete</button>
+                <button routerLink="/dashboard/card-details/{{student.id}}" class="btn btn-dark">view</button>
+                <button routerLink="/dashboard/edit-card/{{student.id}}" class="btn btn-secondary">Edit</button>
+                <button  class="btn btn-danger" (click)="delete(id)">delete</button>
             </div>
         </div>
     </div>
