@@ -50,6 +50,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
+import { EditAccountComponent } from './edit-account/edit-account.component';
 
 
 @NgModule({
@@ -89,7 +91,9 @@ import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
     CreateUserComponent,
     StudentDetailsComponent,
     VehicleDetailsComponent,
-    EditVehicleComponent
+    EditVehicleComponent,
+    AccountDetailsComponent,
+    EditAccountComponent
   ],
   imports: [
     BrowserModule,
