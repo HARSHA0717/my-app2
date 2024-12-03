@@ -35,6 +35,8 @@ import { AuthenticationGuard } from './authentication.guard';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
+
 
 
 
@@ -72,7 +74,9 @@ const routes: Routes = [
     {path:'create-user',component:CreateUserComponent},
     {path:'student-details',component:StudentDetailsComponent},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
-    {path:'edit-vehicle/:id',component:CreateVehicleComponent}
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+    {path:'account-details/:id',component:AccountDetailsComponent},
+    {path:'edit-account/:id',component:CreateAccountComponent}
    
 
 
