@@ -1,3 +1,7 @@
-<p>child works! {{a}}</p>
+<!-- <p>child works! {{a}}</p> -->
 
-<button (click)="send()">Send</button>
+<!-- <button (click)="send()">Send</button> -->
+
+<textarea (input)="oninput()" [maxLength]="max" [(ngModel)]="text"></textarea>
+
+<div class="char-count">{{text.length}}/{{max}}characters</div>
