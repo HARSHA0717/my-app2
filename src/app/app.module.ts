@@ -54,6 +54,11 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
 import { EditAccountComponent } from './edit-account/edit-account.component';
 import { CardDetailsComponent } from './card-details/card-details.component';
 import { EditCardComponent } from './edit-card/edit-card.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { SiblingsComponent } from './siblings/siblings.component';
+import { Sibiling1Component } from './sibiling1/sibiling1.component';
+import { Sibiling2Component } from './sibiling2/sibiling2.component';
 
 
 @NgModule({
@@ -97,7 +102,12 @@ import { EditCardComponent } from './edit-card/edit-card.component';
     AccountDetailsComponent,
     EditAccountComponent,
     CardDetailsComponent,
-    EditCardComponent
+    EditCardComponent,
+    ParentComponent,
+    ChildComponent,
+    SiblingsComponent,
+    Sibiling1Component,
+    Sibiling2Component
   ],
   imports: [
     BrowserModule,
