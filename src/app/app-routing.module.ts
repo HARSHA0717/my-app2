@@ -37,6 +37,8 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { EditVehicleComponent } from './edit-vehicle/edit-vehicle.component';
 import { AccountDetailsComponent } from './account-details/account-details.component';
 import { CardDetailsComponent } from './card-details/card-details.component';
+import { ParentComponent } from './parent/parent.component';
+import { SiblingsComponent } from './siblings/siblings.component';
 
 
 
@@ -79,7 +81,10 @@ const routes: Routes = [
     {path:'account-details/:id',component:AccountDetailsComponent},
     {path:'edit-account/:id',component:CreateAccountComponent},
     {path:'card-details/:id',component:CardDetailsComponent},
-    {path:'edit-card/:id',component:CreateStudentComponent}
+    {path:'edit-card/:id',component:CreateStudentComponent},
+    {path:'parent',component:ParentComponent},
+    {path:'sibilings',component:SiblingsComponent}
+
    
 
 

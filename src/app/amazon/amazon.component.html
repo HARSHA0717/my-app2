@@ -2,7 +2,8 @@
     <div class="child" *ngFor="let product of products">
         <img src="{{product.image}}" alt="" >
         <div class="rate">
-            <span>{{product.rating.rate}}</span>
+            <!-- <span>{{product.rating.rate}}</span> -->
+            <app-rating [rating]="product.rating.rate" ></app-rating>
         </div>
         <h3>{{product.category}}</h3>
         <h4>{{product.title}}</h4>
