@@ -1,0 +1,38 @@
+[
+    
+        {
+            "Vehicle": "Polestar",
+            "manufacturer": "benz",
+            "model": "Challenger",
+            "type": "van",
+            "fuel": "Electric",
+            "color": "black silver",
+            "image": "https://loremflickr.com/640/480/transport",
+            "cost": "920.00",
+            "id": "4",
+            "vehicle": "hhhh"
+        },
+        {
+            "Vehicle": "Chrysler CTS",
+            "manufacturer": "Maserati",
+            "model": "Aventador",
+            "type": "Coupe",
+            "fuel": "Hybrid",
+            "color": "silver",
+            "image": "https://loremflickr.com/640/480/abstract",
+            "cost": 790,
+            "id": "7"
+        },
+        {
+            "Vehicle": "Smart Escalade",
+            "manufacturer": "Nissan",
+            "model": "F-150",
+            "type": "Cargo Van",
+            "fuel": "Hybrid",
+            "color": "tan",
+            "image": "https://loremflickr.com/640/480/cats",
+            "cost": "507.00",
+            "id": "8"
+        }
+    
+]
