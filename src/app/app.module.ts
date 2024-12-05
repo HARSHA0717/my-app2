@@ -60,6 +60,8 @@ import { SiblingsComponent } from './siblings/siblings.component';
 import { Sibiling1Component } from './sibiling1/sibiling1.component';
 import { Sibiling2Component } from './sibiling2/sibiling2.component';
 import { RatingComponent } from './rating/rating.component';
+import { PricePipe } from './price.pipe';
+import { CapitalDirective } from './capital.directive';
 
 
 @NgModule({
@@ -109,7 +111,9 @@ import { RatingComponent } from './rating/rating.component';
     SiblingsComponent,
     Sibiling1Component,
     Sibiling2Component,
-    RatingComponent
+    RatingComponent,
+    PricePipe,
+    CapitalDirective
   ],
   imports: [
     BrowserModule,
